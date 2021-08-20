@@ -1,1 +1,5 @@
-# region-spammer
+- dm @pw#1337 for help
+- open the file
+- put ur token
+- gc id 
+- enjoy
