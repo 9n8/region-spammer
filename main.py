@@ -41,7 +41,7 @@ region = [
     'singapore'
 ]
 
-print(f'{Fore.CYAN}                             By: {Fore.MAGENTA}@uo2')
+print(f'{Fore.CYAN}                             By: {Fore.MAGENTA}@9n8')
 
 import random
 
