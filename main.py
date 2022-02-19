@@ -3,15 +3,23 @@ import os
 os.system(f'title [REGION SPAMMER]')
 os.system(f'mode 75,24')
 
-import colorama
-from colorama import Fore
+import sys, time
 
-token = input(f"{Fore.MAGENTA}Token :{Fore.CYAN} ")
-id = input(f"{Fore.MAGENTA}GC ID :{Fore.CYAN} ")
+from pystyle import Colors, Colorate
+
+def slow_write(text):
+    for x in text: print('' + x, end="");sys.stdout.flush();time.sleep(0.005)
+
+slow_write("\u001b[38;5;159m-> Token: ")
+token = input()
+slow_write("\u001b[38;5;159m->  Gc ID: ")
+id = input()
 
 os.system('cls')
 
 import requests
+
+from colorama import Fore
 
 vc = "https://discord.com/api/v9/channels/"+str(id)+"/call"
 msg = "https://discord.com/api/v9/channels/"+str(id)+"/messages"
@@ -52,4 +60,4 @@ while True:
     }
 
     requests.patch(vc, json = payload, headers=headers)
-    print(f"{Fore.LIGHTGREEN_EX}Region: "+str(rgc))
+    print(f"Region: "+str(rgc))
